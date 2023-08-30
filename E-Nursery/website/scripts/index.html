@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div class="some">
+	
+		<div class="chart-data-window-item-title">om</div>
+		<div class="new-class2"><span>value=om</span></div>
+		<div class="chart-data-window-item-title">Tejas</div>
+		<div class="new-class2"><span>value=tejas</span></div>
+		<div class="chart-data-window-item-title">kaustubh</div>
+		<div class="new-class2"><span>value=kaustubh</span></div>
+		<div class="chart-data-window-item-title">Shreyas</div>
+		<div class="new-class2"><span>value=shreyas</span></div>
+		<div class="chart-data-window-item-title">aditya</div>
+		<div class="new-class2"><span>value=aditya</span></div>
+
+	<button onclick="clicked()">clicked</button>
+
+
+<script type="text/javascript">
+
+	function clicked(){
+		console.log("clicked");
+	}
+
+	
+let Imvalue = document.getElementsByClassName('chart-data-window-item-title');
+let Imsol = document.getElementsByClassName('new-class2');
+
+// console.log(Imsol)
+for(let i=0; i<=Imvalue.length; i++){
+	console.log((Imsol[i].getElementsByTagName('span'))[0].innerHTML)
+	// console.log(Imvalue[i].innerHTML, (Imsol[i].innerHTML))
+}
+
+
+
+
+// for(let i=0; i<=Imvalue.length; i++){
+// 	console.log(Imvalue[i].innerHTML, Imsol[i].innerHTML)
+// }
+
+	
+
+</script>
+</body>
+</html>
